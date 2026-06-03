@@ -10,5 +10,12 @@ def browser_context_args(browser_context_args):
     return {
         **browser_context_args,
 
+        "viewport": {
+            "width": 1920,
+            "height": 1080
+        },
+
+        "ignore_https_errors": True,
+
         "record_video_dir": "reports/videos"
     }
